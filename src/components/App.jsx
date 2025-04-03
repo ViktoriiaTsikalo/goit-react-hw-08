@@ -2,7 +2,7 @@ import ContactForm from "./ContactForm";
 import SearchBox from "./SearchBox";
 import ContactList from "./ContactList";
 import { useState, useEffect } from "react";
-import initialContacts from "./contactsData.json";
+import initialContacts from "../contactsData.json";
 
 const LOCAL_STORAGE_KEY = "contacts";
 
