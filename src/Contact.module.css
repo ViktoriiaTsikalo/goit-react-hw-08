@@ -1,0 +1,30 @@
+.contactBox {
+  border: 1px solid rgb(164, 73, 73);
+  width: 250px;
+  height: 60px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: rgb(252, 245, 236);
+}
+
+.contactText {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.delete {
+  background-color: rgb(233, 132, 116);
+  border: none;
+  height: 27px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.delete:hover {
+  background-color: rgb(255, 101, 101);
+  cursor: pointer;
+}
