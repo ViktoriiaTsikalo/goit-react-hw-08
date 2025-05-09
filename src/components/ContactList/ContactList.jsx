@@ -1,12 +1,9 @@
 import { useSelector, useDispatch } from "react-redux";
-import { deleteContact } from "../redux/contactsOps";
-import Contact from "./Contact";
+import { deleteContact } from "../../redux/contacts/operations";
+import Contact from "../Contact/Contact";
 import s from "./ContactList.module.css";
-import {
-  selectError,
-  selectFilteredContacts,
-  selectLoading,
-} from "../redux/contactsSlice";
+import { selectError, selectLoading } from "../../redux/contacts/selectors";
+import { selectFilteredContacts } from "../../redux/filters/selectors";
 
 const ContactList = () => {
   const dispatch = useDispatch();
