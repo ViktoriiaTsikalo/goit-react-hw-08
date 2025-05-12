@@ -53,9 +53,7 @@ const contactsSlice = createSlice({
         state.isLoading = true;
       })
       .addCase(logout.fulfilled, (state) => {
-        state.user = { name: null, email: null };
-        state.token = null;
-        state.isLoggedIn = false;
+        state.items = [];
         state.isLoading = false;
         state.error = null;
       })
